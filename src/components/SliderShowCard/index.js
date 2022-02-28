@@ -13,7 +13,7 @@ export default function SliderShowCard({ typeProduct }) {
     // Dùng axous lấy ra các sản phẩm có type tương ứng
     //Lấy ra list banner từ DB
     useEffect(() => {
-        axios.get(`/product/collection/${typeProduct}`)
+        axios.get(`https://serverapi-production.up.railway.app/product/collection/${typeProduct}`)
             .then(function ({ data }) {
                 setProductCollection(data.productCollection)
             })

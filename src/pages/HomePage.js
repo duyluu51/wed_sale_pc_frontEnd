@@ -6,7 +6,7 @@ export default function HomePage() {
     //Lấy ra list banner từ DB
     const [listTypeProduct,setListTypeProduct] =useState([])
     useEffect(() => {
-        axios.get('https://wed-sale-pc-backend.herokuapp.com/product/bannerhome')
+        axios.get('https://serverapi-production.up.railway.app/product/bannerhome')
             .then(function ({data}) {
                setListTypeProduct(data.bannerItems[0].list)
             })

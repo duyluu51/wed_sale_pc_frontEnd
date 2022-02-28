@@ -23,7 +23,7 @@ export default function ProductCollectionPage() {
         if (isMount) {
             let resultCollection
             let resultBranchList
-            axios.get(`/product/collection/${typeProduct}`)
+            axios.get(`https://serverapi-production.up.railway.app/product/collection/${typeProduct}`)
                 .then(function ({ data }) {
                     if (typeDetailProduct !== '') {
                         resultCollection = data.productCollection.filter((product, index) => {

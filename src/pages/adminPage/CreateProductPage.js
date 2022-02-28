@@ -15,7 +15,7 @@ export default function CreateProductPage() {
 
     //Lấy ra list product từ DB [GET]
     useEffect(() => {
-        axios.get('http://localhost:5000/product/store')
+        axios.get('https://serverapi-production.up.railway.app/product/store')
             .then(function ({ data }) {
                 setListProduct(data.productitem[0].list)
             })
@@ -41,7 +41,7 @@ export default function CreateProductPage() {
         // Lưu data lên hệ thống
         axios({
             method: "post",
-            url: "http://localhost:5000/product/create",
+            url: "https://serverapi-production.up.railway.app/product/create",
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'

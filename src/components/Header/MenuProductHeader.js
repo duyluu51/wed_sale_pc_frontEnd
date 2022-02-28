@@ -7,7 +7,7 @@ export default function MenuProductHeader() {
     //Lấy ra list product từ DB
     const [listProduct, setListProduct] = useState([])
     useEffect(() => {
-        axios.get('/product/store')
+        axios.get('https://serverapi-production.up.railway.app/product/store')
             .then(function ({ data }) {
                 setListProduct(data.productitem[0].list)
             })

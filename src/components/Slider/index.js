@@ -6,7 +6,7 @@ export default function Slider() {
     //Lấy ra list banner từ DB
     const [listBanner, setListBanner] = useState([])
     useEffect(() => {
-        axios.get('/product/banner')
+        axios.get('https://serverapi-production.up.railway.app/product/banner')
             .then(function ({ data }) {
                 setListBanner(data.banners[0].list)
             })
