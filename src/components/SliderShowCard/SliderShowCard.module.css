@@ -1,0 +1,84 @@
+.sliderArea{
+    position: relative;
+}
+
+.sliderArea:hover .sliderControl{
+    display: block;
+}
+
+.sliderList{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.sliderList > li{
+    margin-right: 15px;
+}
+
+.sliderControl{
+    width: 30px;
+    height: 50px;
+    font-size: 50px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid;
+    border-color: #e60000;
+    color: #e60000;
+    background-color: #fff;
+    opacity: 0.6;
+    display: none
+}
+
+.sliderControl:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: #e60000;
+    opacity: 0.8;
+}
+
+
+.backWard{
+    position: absolute;
+    top: 89px;
+    left: 0%;
+}
+
+.forWard{
+    position: absolute;
+    top: 89px;
+    left:97.5%
+}
+
+/* Hiệu ứng khi hover vào slider Area */
+.sliderArea:hover .backWard{
+    animation: backWardAnimation 0.5s ease-in-out;
+}
+
+.sliderArea:hover .forWard{
+    animation: forWardAnimation 0.5s ease-in-out;
+}
+
+@keyframes backWardAnimation{
+    from{
+        left: -3%;
+        opacity: 0;
+    }
+    to{
+        left: 0%;
+        opacity: 0.6;
+    }
+}
+
+@keyframes forWardAnimation{
+    from{
+        left: 100%;
+        opacity: 0;
+    }
+    to{
+        left: 97.5%;
+        opacity: 0.6;
+    }
+}
+
+

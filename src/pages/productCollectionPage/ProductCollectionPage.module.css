@@ -1,0 +1,46 @@
+.collectionHead{
+    padding: 20px 0px;
+    background: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.container{
+    width: 160px;
+}
+
+.collectionHead .filterBranch{
+    margin-left: 50%;
+}
+
+
+.collectionHead .filterBranch:hover,
+.collectionHead .filterCollection:hover{
+    cursor: pointer;
+}
+
+.filterCollection .title{
+
+}
+
+.filterCollection .listCondition{
+    display: none;
+    z-index: 99;
+    width: 160px;
+
+}
+
+.filterBranch .listCondition{
+    display: none;
+    z-index: 99;
+    width: 150px;
+}
+
+.collectionHead .filterCollection:hover .listCondition,
+.collectionHead .filterBranch:hover .listCondition{
+    display: block;
+}
+
+.listCondition li:hover{
+    color: red;
+}

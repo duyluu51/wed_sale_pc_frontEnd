@@ -1,0 +1,49 @@
+/* File MenuProductHeader */
+
+div:hover > .dropdownHover{
+    display: block;
+    margin-top: 0;
+}
+
+.dropdownHover> a:hover {
+    opacity: 0.8;
+    color:red;
+    border-bottom: solid red 2px;
+    
+}
+
+li:hover .btnGroupNav{
+    opacity: 0.7;
+    background-color: #fff;
+}
+
+.btnGroupNav{
+    font-size: 12px;
+    color: #211f1f;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navIcon{
+    margin: 5px auto;
+    height: 28px;
+}
+
+/* File BottomHeader */
+
+.bottomHeaderDropdown:hover > a{
+    opacity: 0.8
+}
+
+.bottomHeaderDropdown:hover .dropdownMenu{
+    display: block;
+    margin-top: 0;
+}
+
+.dropdownMenu .dropdownMenuItem:hover{
+    opacity: 0.8;
+    color:red;
+    border-bottom: solid red 2px;
+}
